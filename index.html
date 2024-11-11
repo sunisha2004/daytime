@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h3>Select Date and Time:</h3>
+    <label>Hour: 
+        <select id="hourDropdown" onchange="updateOutput()"></select>
+    </label>
+    <label>Minute: 
+        <select id="minuteDropdown" onchange="updateOutput()"></select>
+    </label>
+    <label>Day: 
+        <select id="dayDropdown" onchange="updateOutput()"></select>
+    </label>
+    <label>Month: 
+        <select id="monthDropdown" onchange="updateOutput()"></select>
+    </label>
+    <label>Year: 
+        <select id="yearDropdown" onchange="updateOutput()"></select>
+    </label>
+
+    <h3>Selected Date-Time:</h3>
+    <p id="output"></p>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
